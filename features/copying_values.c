@@ -2,14 +2,14 @@
 
 int main() {
 
-  // Copy the value of x to y
+  // Copy the value of x to y using pointers
   int x = 10;
   int *pX = &x;
   int y = *pX;
 
   printf("x: %d, y: %d\n", x, y); // x: 10, y: 10
 
-  // Copy the value of a to b
+  // Copy the value of a to b without using pointers
   int a = 20;
   int b = a;
 
@@ -32,5 +32,3 @@ int main() {
 
   return 0;
 }
-
-// TIP: Use `cpace main.c` to run the code with auto compile
