@@ -1,0 +1,48 @@
+binary = 0-1
+decimal = 0-9
+hexadecimal = 16 digits, 0-15, 0-F
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+A = 10
+B = 11
+C = 12
+D = 13
+E = 14
+F = 15
+
+hexadecimal = base16
+
+16 1: 16 * 0... + 1 * 0...
+ 0 0 = 16 * 0 + 1 * 0 = 0
+ 0 1 = 16 * 0 + 1 * 1 = 1
+ 0 2
+ 0 3
+ 0 4
+ 0 5
+ 0 6
+ 0 7
+ 0 8
+ 0 9
+ 0 A = 10
+ 0 B
+ 0 C
+ 0 D
+ 0 E
+ 0 F = 15
+ 1 0 = 16 * 1 + 1 * 0 = 16
+ 1 1 = 17
+ ...
+ 1 A = 26
+ ...
+ 1 F = 31
+ 2 0 = 16 * 2 + 1 * 0 = 32
+ ...
+ 2 A = 32 + 10 = 42
+ ...
+ 2 F
+ ...
+ F F = 16 * 15 + 1 * 15 = 240 + 15 = 255
+
+255 = 11111111 (max number represented in 1 byte in binary)
+
+because representing hexadecimal digits can be confusing if the numbers don't have a letter (like 1A or FF), we use this convention for hexadecimal values:
+0x00, 0x01, 0x02, ..., 0x48, 0x49, etc...

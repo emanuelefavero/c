@@ -1,0 +1,23 @@
+RUN C like nodemon with cpace:
+cpace filename.c
+
+OR:
+
+COMPILE C CODE FILE, GENERATE a.out:
+gcc filename.c
+
+RUN a.out:
+./a.out
+
+CREATE EXECUTABLE FROM C FILE (WITHOUT a.out):
+gcc filename.c -o filename
+
+RUN filename:
+./filename
+
+YOU CAN RENAME a.out TO WHATEVER YOU WANT.
+
+OR USE clang:
+
+clang FILENAME.c 
+clang -o FILENAME FILENAME.c
