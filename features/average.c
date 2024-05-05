@@ -16,5 +16,3 @@ int main() {
 
   return 0;
 }
-
-// TIP: Use `cpace main.c` to run the code with auto compile
