@@ -57,3 +57,7 @@ docker run c-program
 - [Docker](https://docs.docker.com/get-docker/)
 
 > Note: You need to already have `gcc` and `node.js` installed on your machine to install and use `cpace`
+
+## License
+
+- [MIT](LICENSE.md)
