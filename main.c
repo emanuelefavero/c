@@ -1,13 +1,10 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
 
-  // String concatenation
-  char str[20] = "Hello";
-  strcat(str, " World");
+  char a = 65;
 
-  printf("%s \n", str);
+  printf("%c\n", a); // A
 
   return 0;
 }
