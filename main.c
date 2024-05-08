@@ -2,12 +2,9 @@
 
 int main() {
 
-  int count = 1;
-
-  do {
-    printf("%d \n", count);
-    count++;
-  } while (count <= 0);
+  for (int i = 0; i < 5; i++) {
+    printf("%d \n", i);
+  }
 
   return 0;
 }

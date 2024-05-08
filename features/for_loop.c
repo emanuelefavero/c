@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    
-    int i;
-    int max = 5;
 
-    for (i = 1; i <= max; i++) {
-        printf("%d \n", i);
-    }
+  for (int i = 0; i < 5; i++) {
+    printf("%d \n", i);
+  }
 
-    return 0;
+  return 0;
 }
 
 // 1
