@@ -1,45 +1,34 @@
 #include <stdio.h>
 
-// c string standard library
-#include <string.h>
-
 int main() {
-  // * strlen() - get string length
-  char name[] = "john";
-  printf("string length is %lu \n", strlen(name));
+  // * input
+  // fgets() is used to read a string from the user
+  char a[100];
 
-  // * strcat() - concatenate strings
-  char a[20] = "hello ";
-  char b[20] = "how are you";
+  printf("Enter you name: ");
+  fgets(a, 100, stdin);
+  printf("you entered: %s \n", a);
 
-  // dest, source
-  strcat(a, b);
+  // You can also use scanf() to read single word strings
+  // TIP: For multiple word input, use fgets() since scanf() stops at the first
+  // space
+  char b[100];
 
-  printf("%s \n", a); // hello how are you
-  printf("%s \n", b); // how are you, a is modified, b is not
+  printf("Enter your last name: ");
+  scanf("%s", b);
+  printf("Your last name is: %s \n", b);
 
-  // * strcpy() - copy string to another
-  char c[20] = "hey";
-  char d[20];
+  // * Multiple inputs
+  // You can use scanf() to read multiple inputs
+  char name[100];
+  int age;
 
-  // dest, source
-  strcpy(d, c);
+  printf("Enter your name and age: ");
+  scanf("%s %d", name, &age);
+  // TIP: scanf() needs the address of the variable,
+  // Name is an array so it's already an address
 
-  printf("%s \n", d); // hey
-
-  // * strcmp() - compare strings
-  char str1[] = "hello";
-  char str2[] = "hello";
-
-  // ? strcmp() returns 0 if strings are equal and non-zero if not
-  if (strcmp(str1, str2) == 0) {
-    printf("strings are equal \n");
-  } else {
-    printf("strings are not equal \n");
-  }
-
-  int result = strcmp(str1, str2);
-  printf("result is %d \n", result);
+  printf("Your name is %s and you are %d years old \n", name, age);
 
   return 0;
 }
