@@ -52,12 +52,14 @@ int main() {
   int current_length3 = 5;
   int index = 2;
 
-  // Shift elements to the left starting from the index
-  for (int i = index; i < current_length3; i++) {
-    nums6[i] = nums6[i + 1];
-  }
+  if (index < current_length3 && current_length3 < 10) {
+    // Shift elements to the left starting from the index
+    for (int i = index; i < current_length3; i++) {
+      nums6[i] = nums6[i + 1];
+    }
 
-  current_length3--;
+    current_length3--;
+  }
 
   for (int i = 0; i < current_length3; i++) {
     printf("%d \n", nums6[i]); // 1 2 4 5
@@ -68,16 +70,55 @@ int main() {
   int current_length4 = 5;
   int index2 = 2;
 
-  // Shift elements to the right starting from the index
-  for (int i = current_length4; i > index2; i--) {
-    nums7[i] = nums7[i - 1];
-  }
+  if (current_length4 < 10) {
+    // Shift elements to the right starting from the index
+    for (int i = current_length4; i > index2; i--) {
+      nums7[i] = nums7[i - 1];
+    }
 
-  nums7[index2] = 10;
-  current_length4++;
+    // Insert element at index
+    nums7[index2] = 10;
+    current_length4++;
+  }
 
   for (int i = 0; i < current_length4; i++) {
     printf("%d \n", nums7[i]); // 1 2 10 3 4 5
+  }
+
+  // * Insert element to array at start
+  int nums8[10] = {1, 2, 3};
+  int current_length5 = 3;
+
+  if (current_length5 < 10) {
+    // Shift all elements to the right
+    for (int i = current_length5; i > 0; i--) {
+      nums8[i] = nums8[i - 1];
+    }
+
+    // Insert element at start
+    nums8[0] = 100;
+    current_length5++;
+  }
+
+  for (int i = 0; i < current_length5; i++) {
+    printf("%d \n", nums8[i]); // 100 1 2 3
+  }
+
+  // * Remove element from array at start
+  int nums9[10] = {1, 2, 3};
+  int current_length6 = 3;
+
+  if (current_length6 > 0) {
+    // Shift all elements to the left
+    for (int i = 0; i < current_length6; i++) {
+      nums9[i] = nums9[i + 1];
+    }
+
+    current_length6--;
+  }
+
+  for (int i = 0; i < current_length6; i++) {
+    printf("%d \n", nums9[i]); // 2 3
   }
 
   return 0;
