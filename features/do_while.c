@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    
-    int count = 1;
 
-    do {
-        printf("%d \n", count);
-        count++;
-    } while (count <= 5);
+  int count = 1;
 
-    return 0;
+  do {
+    printf("%d \n", count);
+    count++;
+  } while (count <= 0);
+
+  return 0;
 }
