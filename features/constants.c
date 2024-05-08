@@ -10,4 +10,5 @@ int main() {
   return 0;
 }
 
-// TIP: Use `cpace main.c` to run the code with auto compile
+// TIP: Constants are variables that cannot be changed
+// TIP: It is good practice to use uppercase for constants
