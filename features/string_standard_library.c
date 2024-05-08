@@ -3,24 +3,24 @@
 // c string standard library
 #include <string.h>
 
-int main()
-{
-    // strlen()
-    char name[] = "ema";
-    printf("the length of this string is %zu \n", strlen(name));
+int main() {
+  // strlen()
+  char name[] = "john";
+  printf("string length is %d \n", strlen(name));
 
-    // strcat()
-    char a[20] = "ciao ";
-    char b[20] = "come va";
-    strcat(a, b);
-    printf("%s \n", b);
+  // strcat() - concatenate strings
+  char a[20] = "hello ";
+  char b[20] = "how are you";
+  strcat(a, b);
+  printf("%s \n", a); // hello how are you
+  printf("%s \n", b); // how are you, a is modified, b is not
 
-    // strcpy(), COPY STRING TO ANOTHER
-    char c[20] = "ciao";
-    char d[20];
-    // dest, source
-    strcpy(d, c);
-    printf("%s \n", d);
+  // strcpy() - copy string to another
+  char c[20] = "hey";
+  char d[20];
+  // dest, source
+  strcpy(d, c);
+  printf("%s \n", d); // hey
 
-    return 0;
+  return 0;
 }
