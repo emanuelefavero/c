@@ -1,33 +1,31 @@
 #include <stdio.h>
 
 int main() {
+  // * ARRAYS
+  int nums[3] = {1, 2, 3};
+  printf("%d \n", nums[0]); // 1
 
-  // * for loop
-  for (int i = 0; i < 5; i++) {
-    printf("%d \n", i);
+  // * Dynamic array
+  int nums2[] = {1, 2, 3};
+  int length = sizeof(nums2) / sizeof(nums2[0]);
+
+  for (int i = 0; i < length; i++) {
+    printf("%d \n", nums2[i]); // 1 2 3
   }
-  // 0 1 2 3 4
 
-  // * break
-  for (int i = 0; i < 5; i++) {
-    if (i == 3) {
-      break;
-    }
+  // * Add element to array
+  int nums3[10] = {1, 2, 3};
+  int current_length = 3;
+  int new_element = 4;
 
-    printf("%d \n", i);
+  if (current_length < 10) {
+    nums3[current_length] = new_element;
+    current_length++;
   }
-  // 0 1 2
 
-  // * continue
-  for (int i = 0; i < 4; i++) {
-    if (i == 2) {
-      printf("hey \n");
-      continue;
-    } else {
-      printf("%d\n", i);
-    }
+  for (int i = 0; i < current_length; i++) {
+    printf("%d \n", nums3[i]); // 1 2 3 4
   }
-  // 0 1 hey 3
 
   return 0;
 }
