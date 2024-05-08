@@ -1,42 +1,28 @@
-#include <stdbool.h>
 #include <stdio.h>
 
-int main(void) {
-  // * Boolean
-  // Boolean in C are not a built in type and must be included from stdbool.h
-  bool a = true;
-  bool b = false;
+int main() {
+  int n = -28;
 
-  if (a) {
-    printf("a is true\n"); // a is true
+  // * If else
+  if (n > 0 && n <= 100) {
+    printf("n is a number between 1 and 100 \n");
+  } else if (n <= 0 && n >= -100) {
+    printf("n is a number between -100 and 0 \n");
+  } else {
+    printf("n is not a number between -100 and 100 \n");
   }
 
-  printf("%d\n", a); // 1
-  printf("%d\n", b); // 0
-
-  printf("%s\n", a ? "true" : "false"); // true
-
-  // --------------------------------------------
-
-  // TIP: It is more common to use 1 for true and 0 for false or compare values
-  // directly
-
-  int age = 21;
-
-  // Use 1 for true
-  if (1) {
-    printf("1 is true\n");
+  if (!(n == 4)) {
+    printf("n is NOT equal to 4 \n");
   }
 
-  // Use 0 for false
-  if (0) {
-    printf("0 is true\n");
-  }
+  // * Ternary operator
+  int x = 5;
 
-  // Compare directly
-  if (age >= 18) {
-    printf("You are an adult\n");
-  }
+  (x == 5) ? printf("x is equal to 5 \n") : printf("x is NOT equal to 5 \n");
+
+  // * Check if x is even or odd
+  (x % 2 == 0) ? printf("x is even \n") : printf("x is odd \n");
 
   return 0;
 }
