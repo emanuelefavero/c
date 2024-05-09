@@ -20,4 +20,4 @@ int main(void) {
 
 // TIP: THE FACTORIAL OF 4 IS 4 * 3 * 2 * 1 = 24
 
-// TIP: Use `cpace main.c` to run the code with auto compile
+// The factorial of 5 is 120
