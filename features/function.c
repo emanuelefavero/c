@@ -1,30 +1,26 @@
 #include <stdio.h>
 
-// DECLARE FUNCTIONS
+// * Declare (prototype)
 void hello();
 int sum(int x, int y);
 
-int main()
-{
-    // CALL FUNCTIONS
-    hello();
+int main() {
+  // * Call
+  hello(); // Hello World
+  int a = 3;
+  int b = 2;
+  printf("%d \n", sum(a, b)); // 5
 
-    printf("%d \n", sum(3, 2));
-
-    return 0;
+  return 0;
 }
 
-// DEFINE FUNCTIONS
-void hello()
-{
-    printf("Hello World \n");
-}
+// * Define
+void hello() { printf("Hello World \n"); }
+int sum(int x, int y) { return x + y; }
 
-int sum(int x, int y)
-{
-    int result = x + y;
-    return result;
-}
-
-// Hello World
-// 5
+/*
+TIP: You could also just define the functions before the main function and avoid
+the need to declare them. It is fine for small projects
+TIP: In bigger projects, it is better to declare the functions in a header file.
+@see functions_headers.c
+*/
