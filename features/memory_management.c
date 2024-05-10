@@ -8,6 +8,9 @@ int main() {
   printf("%d \n", users[0]); // 1
 
   // * Dynamic memory
+  // TIP: Dynamic memory is useful when working with data structures like
+  // arrays, linked lists, trees, etc
+
   // * Allocation
   // malloc
   int *users2 = malloc(3 * sizeof(int)); // ? malloc(size)
