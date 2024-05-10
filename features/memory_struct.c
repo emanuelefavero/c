@@ -28,3 +28,11 @@ int main() {
 
   return 0;
 }
+
+/*
+TIP: The arrow operator `->` is for accessing struct members with pointers
+TIP: When dealing with individual instances of a struct, there's typically no
+need to use realloc. The size of a single struct instance is fixed and does not
+change during the program's execution. Therefore, dynamic memory allocation and
+reallocation are unnecessary in this scenario
+*/
