@@ -28,7 +28,3 @@ int main() {
 
   return 0;
 }
-
-// TIP: The arrow operator `->` is for accessing struct members with pointers
-
-// TIP: Use `cpace main.c` to run the code with auto compile
