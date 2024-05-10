@@ -67,3 +67,12 @@ int main() {
 
   return 0;
 }
+
+/*
+TIP: We use `&head` in the insert call `insert(&head, 10)` to pass the address
+of the head pointer
+TIP: By then using a double pointer `Node **head` in the
+insert function, we can modify the head pointer itself rather than just the
+value it points to. This allows us to update the head pointer with another
+pointer `*newNode`
+*/
